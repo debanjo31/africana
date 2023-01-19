@@ -26,20 +26,31 @@ function Homepage() {
               <button className='bg-[#141414] mx-auto text-center text-white px-6  py-2'>See All Models</button>
           </div>
           <Casting />
-          <div className='flex mt-20 text-2xl justify-center gap-8'>
-                <p className='font-san'>LIGHTS</p>
-                <p className='font-san'>CAMERA</p>
-          </div>
-          <p className='font-san text-center mt-4 text-3xl font-bold'>ACTION!!!</p>
-          <p className='text-center mt-2'>Documentary: <b> A PERFECT SHOOT </b></p>
-           <div className='w-5/6 mt-8 mx-auto '>
-            <div className='relative'>
+          <div className='md:flex flex-row-reverse w-5/6 mx-auto'>
+            <div className='md:w-3/6 flex flex-col justify-around'>
+              <div className='flex mt-20 md:mt-10 md:flex-col items-center text-2xl justify-center gap-4'>
+                  <p className='font-san'>LIGHTS</p>
+                  <p className='font-san'>CAMERA</p>
+              </div>
+              <p className='font-san text-center mt-4 text-3xl font-bold'>ACTION!!!</p>
+              <div>
+                 <p className='text-center mt-2'>Documentary: <b> A PERFECT SHOOT </b></p>
+                <div className='flex items-center mt-4 hidden md:flex'>
+                 <button className='bg-[#141414]  mx-auto text-center text-white px-6  py-2'>Play Video</button>
+                 </div> 
+              </div>
+            </div>
+          <div className='md:w-3/6'>
+             <div className='w-5/6 md:w-full mt-8 mx-auto '>
+               <div className='relative'>
                 <img src={VideoImg} alt='Africanna video' className='w-full' />
                 <img src={playIcon} alt="" className='playIcon' />
+               </div>
             </div>
-           </div>
-           <div className='flex items-center mt-8'>
-              <button className='bg-[#141414] mx-auto text-center text-white px-6  py-2'>Play Video</button>
+          </div>
+           <div className='flex items-center mt-8 md:hidden'>
+              <button className='bg-[#141414] md:hidden mx-auto text-center text-white px-6  py-2'>Play Video</button>
+          </div>
           </div>
           <Client />
           <Booking />

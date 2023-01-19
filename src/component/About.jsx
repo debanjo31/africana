@@ -25,7 +25,7 @@ function About() {
     }
   return (
     <div className='bg-white  px-8 py-4'>
-        <div className='md:flex'> 
+        <div className='md:flex md:mt-16 xl:w-5/6 xl:mx-auto'> 
         <div className='md:w-1/2'>
         <p className='font-bold text-xl mb-2'>About Us</p>
         <p className='text-gray-500 mb-4'>Brief history of Africans</p>
@@ -43,7 +43,7 @@ function About() {
              <AboutImage  />
         </div>
         </div>
-        <div className='md:flex justify-between'>
+        <div className='md:flex justify-between md:mt-16'>
         <h3 className='font-bold text-lg mt-2 md:text-xl md:w-3/6 md:pr-8'>NO 1 Leading Modelling agency in Nigeria</h3>
         <div className='flex justify-around md:w-3/6 md:justify-between md:text-xl'>
             <div >

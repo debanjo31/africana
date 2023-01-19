@@ -10,7 +10,7 @@ function Client() {
   return (
     <div className='mt-12 w-5/6 mx-auto'>
         <p className='bg-black text-center text-white px-2 py-2'>Existing Clients</p>
-        <div className='flex justify-between mt-4'>
+        <div className='flex justify-between mt-4 md:hidden'>
             <div className='flex flex-col gap-4'>
                 <img src={client1} className="inline-block" alt="africanna client" />
                 <img src={client4} className="inline-block" alt="africanna client" />
@@ -24,8 +24,15 @@ function Client() {
                 
             <img src={client3} className="inline-block" alt="africanna client" />
             <img src={client6} className="inline-block" alt="africanna client" />
-            </div>
-            
+            </div>  
+        </div>
+        <div className=" hidden md:flex-wrap md:flex justify-between mt-4">
+        <img src={client1} className="inline-block" alt="africanna client" />
+                <img src={client2} className="inline-block h-24" alt="africanna client" />
+                <img src={client3} className="inline-block h-24" alt="africanna client" />
+                <img src={client4} className="inline-block h-24" alt="africanna client" />
+                <img src={client5} className="inline-block h-24" alt="africanna client" />
+                <img src={client6} className="inline-block h-24" alt="africanna client" />
         </div>
     </div>
   )
