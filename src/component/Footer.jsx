@@ -10,7 +10,7 @@ function Footer() {
                 <p className='cinzel md:text-xl'>NEWSLETTER</p>
                 <div className='flex gap-2 md:gap-6'>
                      <img src={logo} className="block w-12 md:w-16" alt='' />
-                     <p className='font-san cinzel text-lg mt-2 md:text-xl lg:text-2xl'>Africana</p>
+                     <p className='font-san  text-lg mt-2 md:text-xl lg:text-2xl'>Africana</p>
                 </div>
             </div>
             <div className="input">
