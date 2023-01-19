@@ -3,7 +3,7 @@ import React from 'react'
 function Booking() {
   return (
     <div className='mt-8  ' >
-      <div className="relative w-5/6 mx-auto">
+      <div className="relative">
           <div className='booking pt-2 pb-4 z-10 md:pt-6 md:pb-8'>
         </div>
         <div className='absolute inset-y-1/4 -mt-12 z-20 p-4 lg:mx-auto '>
