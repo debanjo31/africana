@@ -43,7 +43,7 @@ function Homepage() {
           <div className='md:w-3/6'>
              <div className='w-5/6 md:w-full mt-8 mx-auto '>
                <div className='relative'>
-                <img src={VideoImg} alt='Africanna video' className='w-full' />
+                <img src={VideoImg} alt='Africanna video' className='h-64 w-full' />
                 <img src={playIcon} alt="" className='playIcon' />
                </div>
             </div>
