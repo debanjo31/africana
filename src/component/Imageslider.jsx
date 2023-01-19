@@ -10,7 +10,7 @@ import {motion} from "framer-motion";
 
 function Imageslider() {
   return (
-    <motion.div className='cards flex -ml-12 flex-nowrap gap-4 imageSlider mt-4 mb-2'>
+    <motion.div  initial={{opacity:0.7, x:500}} animate={{opacity:1, x:0}} transition={{type:"tween", duration:3}} className='cards flex -ml-12 flex-nowrap gap-4 imageSlider mt-4 mb-2'>
         <img src={img1}  className="cards  " alt='africanna display ' />
         <img src={img2} className="cards " alt='africanna display ' />
         <img src={img3} className="cards " alt='africanna display ' />
