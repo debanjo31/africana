@@ -6,17 +6,18 @@ import img3 from './img/img3.png'
 import img4 from './img/img4.png'
 import img5 from './img/img5.png'
 import img6 from './img/img6.png'
+import {motion} from "framer-motion";
 
 function Imageslider() {
   return (
-    <div className='cards flex -ml-12 flex-nowrap gap-4 imageSlider mt-4 mb-2'>
+    <motion.div className='cards flex -ml-12 flex-nowrap gap-4 imageSlider mt-4 mb-2'>
         <img src={img1}  className="cards  " alt='africanna display ' />
         <img src={img2} className="cards " alt='africanna display ' />
         <img src={img3} className="cards " alt='africanna display ' />
         <img src={img4} className="cards " alt='africanna display ' />
         <img src={img5} className="cards " alt='africanna display ' />
         <img src={img6} className=" cards  " alt='africanna display ' />
-    </div>
+    </motion.div>
   )
 }
 
