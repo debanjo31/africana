@@ -4,12 +4,14 @@ import aboutImage2 from './img/aboutimg2.png'
 import aboutLogo from './img/aboutlgo.png'
 import logo from './img/logodark.png'
 import logoWhite from './img/mediumlogo.png'
+import {motion} from "framer-motion";
 
 function About() {
     const AboutImage = () => {
         return(
-            <div className='about-image  px-12'>
+            <motion.div initial={{opacity:0.7, x:-100}} animate={{opacity:1, x:0}} transition={{type:"tween", duration:3}} className='about-image  px-12'>
             <div className='flex justify-center w-4/6 mx-auto relative '>
+                
                <img src={aboutImage1} className="mt-16 z-10 -mr-4 h-56" alt='Africsanna' />
                <img src={aboutImage2}  className="h-56" alt='Africsanna' />
                <div className='absolute top-28 left-50 z-20 p-2 border-white border-2 bg-black'>
@@ -20,7 +22,7 @@ function About() {
                  <img src={logo} className="h-16" alt="africanna" />
                  <p className='font-san mt-6 text-xl mt-2 lg:text-2xl'>Africana</p>
             </div>
-         </div>
+         </motion.div>
         )
     }
   return (

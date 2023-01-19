@@ -9,11 +9,12 @@ import Client from './Client'
 import Booking from './Booking'
 import Testimonial from './Testimonial'
 import './homepage.css'
+import {motion} from "framer-motion";
 
 function Homepage() {
   return (
     <div className='mt-8 homepage'>
-        <p className='font-bold text-4xl w-5/6 mx-auto leading-12 text-center'>Exploring Africa’s  beauty in  people</p>
+        <motion.p initial={{opacity:0.7, y:50}} animate={{opacity:1, y:0}} transition={{type:"tween", duration:2}} className='font-bold text-4xl w-5/6 mx-auto leading-12 text-center lg:text-5xl xl:text-6xl lg:mb-6'>Exploring Africa’s  beauty in  people</motion.p>
         <Imageslider />
         <div className='flex items-center mb-8 '>
             <button className='bg-[#141414] element mx-auto text-center text-white px-6  py-2'>Book Apointment</button>
@@ -43,7 +44,7 @@ function Homepage() {
           <div className='md:w-3/6'>
              <div className='w-6/6 md:w-full mt-8 mx-auto '>
                <div className='relative'>
-                <img src={VideoImg} alt='Africanna video' className='h-64 w-full' />
+                <img src={VideoImg} alt='Africanna video' className='h-64 lg:h-72 xl:h-80 w-full' />
                 <img src={playIcon} alt="" className='playIcon' />
                </div>
             </div>

@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App bg-[#f6f6f6]">
           {
-              loading ? <img src={Loading} alt="loading" className=" mt-16 w-full h-full" onLoad={onLoad}/> : <Page  />
+              loading ? <img src={Loading} alt="loading" className=" mt-16  w-full h-full lg:h-96 lg:w-full" onLoad={onLoad}/> : <Page  />
           }        
    </div>
   );
