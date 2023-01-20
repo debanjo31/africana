@@ -155,3 +155,10 @@
  } 
  
 }
+
+
+@media (max-width: 400px) {
+  .about-absolute{
+    opacity: 0;
+  }
+}

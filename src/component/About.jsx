@@ -5,6 +5,7 @@ import aboutLogo from './img/aboutlgo.png'
 import logo from './img/logodark.png'
 import logoWhite from './img/mediumlogo.png'
 import {motion} from "framer-motion";
+import './homepage.css'
 
 function About() {
     const AboutImage = () => {
@@ -18,7 +19,7 @@ function About() {
                    <img src={aboutLogo} className="h-16" alt='Africanna' />  
                </div>
             </div>
-            <div className='flex justify-end ml-8 -m-8 mb-4 sm:mr-24 md:hidden'>
+            <div className='flex justify-end about-absolute  -m-8 mb-4 sm:mr-24 md:hidden'>
                  <img src={logo} className="h-16" alt="africanna" />
                  <p className='font-san mt-6 text-xl mt-2 lg:text-2xl'>Africana</p>
             </div>
